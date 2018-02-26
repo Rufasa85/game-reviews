@@ -1,0 +1,27 @@
+{
+  "name": "game-reviews",
+  "version": "1.0.0",
+  "description": "Joe's game reviews! lets push to github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rufasa85/game-reviews.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rufasa85/game-reviews/issues"
+  },
+  "homepage": "https://github.com/Rufasa85/game-reviews#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.34.0"
+  }
+}
