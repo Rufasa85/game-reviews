@@ -1,8 +1,10 @@
 <% include ../partials/header.ejs %>
 <h1>games index page</h1>
-<ul>
-	<a href="/games/1">1st game</a>
-	<a href="/games/2">2nd game</a>
-	<a href="games/3">3rd game</a>
-</ul>
+<% games.forEach(function(game) { %>
+	<div class='gameDiv'>
+		<h2><%=game.title%></h2>
+		<h5><%=game.score%></h5>
+		<p><%=game.description%></p>
+	</div>
+<%})%>
 <% include ../partials/footer.ejs %>
