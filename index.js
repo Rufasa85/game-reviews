@@ -32,12 +32,30 @@ app.get('/games/:id', function(req,res) {
 	})
 });
 
+app.put('/games/:id', function(req,res) {
+	db.game.find({where:{id:req.params.id}}).then(function(game) {
+		game.updateAttributes({
+			title:req.body.title,
+			score:parseFloat(req.body.score),
+			description:req.body.description
+		}).then(function(){
+			res.send('updated!')
+		})
+	})
+})
+
 app.delete('/games/:id', function(req,res) {
 	db.game.find({where: {id:req.params.id}}).then(function(game) {
 		db.game.destroy({where:{id:game.id}}).then(function(){
 			// res.redirect('/games');
 			res.send('done')
 		})
+	})
+})
+
+app.get('/games/:id/edit',function(req,res) {
+	db.game.find({where: {id:req.params.id}}).then(function(game) {
+		res.render('games/edit', {game:game})
 	})
 })
 
