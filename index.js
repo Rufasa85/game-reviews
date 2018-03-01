@@ -33,9 +33,10 @@ app.get('/games/:id', function(req,res) {
 });
 
 app.delete('/games/:id', function(req,res) {
-	db.games.find({where: {id:req.params.id}}).then(function(game) {
-		db.games.destroy().then(function(){
-			res.redirect('/games');
+	db.game.find({where: {id:req.params.id}}).then(function(game) {
+		db.game.destroy({where:{id:game.id}}).then(function(){
+			// res.redirect('/games');
+			res.send('done')
 		})
 	})
 })
