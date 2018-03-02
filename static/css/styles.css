@@ -1,3 +1,55 @@
 body { 
-	background-color: yellow;
+
+	background: #5A3F37;
+	background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);
+	background: linear-gradient(to right, #2C7744, #5A3F37);
+	color:white;
+	font-family:'Roboto', sans-serif;
+ }
+
+ h1 {
+ 	font-size: 72px;
+ 	text-align:center;
+ }
+ 
+ a {
+ 	color:white;
+ 	text-decoration: none;
+ 	 
+ }
+
+ a:visited{
+ 	color:white;
+ }
+
+ .flex-box {
+ 	height:75vh;
+ 	display:flex;
+ 	justify-content:center;
+ 	align-items:center;
+ }
+
+.splash-page-link {
+	height:50%;
+	width:25%;
+	display:flex;
+
+}
+
+ #board-game-review-link {
+ 	display:flex;
+	justify-content: center;
+	align-items:center; 
+ 	width:100%;
+ 	background-image: url("https://images.pexels.com/photos/872959/pexels-photo-872959.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+ 	background-size: cover;
+ }
+
+#video-game-review-link {
+	display:flex;
+	justify-content: center;
+	align-items:center; 
+	width:100%;
+ 	background-image: url("https://images.pexels.com/photos/687811/pexels-photo-687811.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
+ 	background-size: cover;
  }

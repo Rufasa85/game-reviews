@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$('.editBtn').on('click', function(e) {
+	$('.editBtn').on('submit', function(e) {
 		e.preventDefault();
 		var myUrl = $(this).attr('action');
 		var myData = $(this).serialize()

@@ -1,8 +1,18 @@
 <% include partials/header.ejs %>
 
 <h1>Welcome to my site!</h1>
-<a href="/plays">Play link</a>
-<a href="/games">Game link</a>
-<a href="/about">About link</a>
+<div class='flex-box'>
+	<!-- <a href="/plays">Play link</a> -->
+	<a class ='splash-page-link' href="/games">
+		<div id='board-game-review-link'>
+			<h2>Board games</h2>		
+		</div>
+	</a>
+	<a class ='splash-page-link' href="/#">
+		<div  id='video-game-review-link'>
+			<h2>Video games</h2>		
+		</div>
+	</a>
+</div>
 
 <% include partials/footer.ejs %>
