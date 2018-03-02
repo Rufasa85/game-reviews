@@ -15,17 +15,13 @@ body {
  a {
  	color:white;
  	text-decoration: none;
- 	 
- }
 
- a:visited{
- 	color:white;
  }
 
  .flex-box {
  	height:75vh;
  	display:flex;
- 	justify-content:center;
+ 	justify-content:space-around;
  	align-items:center;
  }
 
@@ -34,6 +30,29 @@ body {
 	width:25%;
 	display:flex;
 
+}
+
+.game-link {
+	height:30vh;
+	width:24%;
+	border:1px solid white;
+	border-radius: 3%;
+	opacity: 0.5;
+	background-color: white;
+	color:black;
+	box-shadow: 2px 4px;
+}
+
+.game-link:hover {
+	opacity: 1;
+}
+
+ .index-page-score {
+ 	float: right;
+ }
+
+#game-index-flex-box {
+	flex-wrap:wrap;
 }
 
  #board-game-review-link {
@@ -53,3 +72,4 @@ body {
  	background-image: url("https://images.pexels.com/photos/687811/pexels-photo-687811.jpeg?w=940&h=650&auto=compress&cs=tinysrgb");
  	background-size: cover;
  }
+

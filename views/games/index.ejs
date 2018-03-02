@@ -1,11 +1,13 @@
 <% include ../partials/header.ejs %>
 <h1>games index page</h1>
-<% games.forEach(function(game) { %>
-	<div class='gameDiv'>
-		<h2><%=game.title%></h2>
-		<a href="/games/<%= game.id %>">Link</a>
-		<h5><%=game.score%></h5>
-		<p><%=game.description%></p>
-	</div>
-<%})%>
+<div class='flex-box' id='game-index-flex-box'>
+	<% games.forEach(function(game) { %>
+		<a class = 'game-link' href="/games/<%= game.id %>">
+			<div class='game-div'>
+				<h2><%=game.title%><span class='index-page-score'>Score: <%=game.score%></span></h2>
+				<p><%=game.description%></p>
+			</div>
+		</a>
+	<%})%>
+</div>
 <% include ../partials/footer.ejs %>
