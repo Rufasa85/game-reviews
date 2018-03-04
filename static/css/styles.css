@@ -43,8 +43,12 @@ body {
 	box-shadow: 2px 4px;
 }
 
-.game-link:hover {
+a.game-link:hover {
 	opacity: 1;
+}
+
+.game-div:hover {
+	opacity:1;
 }
 
  .index-page-score {
