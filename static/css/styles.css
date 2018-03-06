@@ -1,5 +1,6 @@
 body { 
-
+	margin:0;
+	padding:0;
 	background: #5A3F37;
 	background: -webkit-linear-gradient(to right, #2C7744, #5A3F37);
 	background: linear-gradient(to right, #2C7744, #5A3F37);
@@ -24,6 +25,15 @@ textarea {
 
 textarea:focus{
 	border: 1px solid white
+}
+
+.navbar-link {
+	display:inline-block;
+	font-size:32px;
+}
+
+.navbar-link:hover {
+	background-color:gray;
 }
 
  .flex-box {
@@ -115,6 +125,19 @@ a.game-link:hover {
 .game-show-details {
 	margin:5px;
 	padding:0;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-around;
+	height:10vh;
+	align-items: center;
+	margin:0;
+	padding:0;
+	width:100%;
+	border:none;
+	list-style-type: none;
+	background:black;
 }
 
 #game-index-flex-box {
