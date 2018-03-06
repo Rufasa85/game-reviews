@@ -198,3 +198,20 @@ a.game-link:hover {
 #show-delete-button:hover {
 	opacity: 1;
 }
+
+#about-page-flexbox {
+	display:flex;
+	justify-content: center;
+	flex-wrap:wrap;
+
+}
+
+#about-page-headshot {
+	border-radius:50%;
+	width:33%;
+	height: 33%;
+}
+
+#about-page-desc {
+	width:70%;
+}
