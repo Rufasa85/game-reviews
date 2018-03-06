@@ -1,9 +1,10 @@
 <% include ../partials/header.ejs %>
-<form method="post" action="/games">
-	Title:<input type="text" name="title">
-	Score:<input type="text" name="score">
-	Description:<input type="text" name="description">
-	<input type="submit">
+<h1>Add a new game!</h1>
+<form method="post" action="/games" class='new-form-flexbox' id='new-form'>
+	<input class='new-game-input'placeholder='Title' type="text" name="title">
+	<input class='new-game-input'placeholder='Score' type="text" name="score">
+	<textarea class='new-game-input'placeholder='Description' type="text" name="description" form='new-form'></textarea>
+	<input type="submit" id='new-form-submit'>
 </form>
 
 <% include ../partials/footer.ejs %>

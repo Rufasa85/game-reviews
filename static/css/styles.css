@@ -18,6 +18,14 @@ body {
 
  }
 
+textarea {
+	height:33vh;
+}
+
+textarea:focus{
+	border: 1px solid white
+}
+
  .flex-box {
  	height:75vh;
  	display:flex;
@@ -40,6 +48,7 @@ body {
 	opacity: 0.5;
 	background-color: white;
 	color:black;
+	overflow:hidden;
 	box-shadow: 2px 4px;
 }
 
@@ -54,6 +63,33 @@ a.game-link:hover {
  .index-page-score {
  	float: right;
  }
+
+ .new-game-input {
+ 	background:transparent;
+ 	border:none;
+ 	border-bottom:1px solid white;
+ 	width:33vw;
+ 	align-items:center;
+ 	color:white;
+ 	font-size:30px;
+
+ }
+
+.new-game-input:focus {
+	outline:none;
+}
+
+ ::placeholder{
+ 	color: white;
+ 	opacity:0.75;
+ 	text-align: center;
+ }
+
+.new-form-flexbox {
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
 
 #game-index-flex-box {
 	flex-wrap:wrap;
@@ -77,3 +113,10 @@ a.game-link:hover {
  	background-size: cover;
  }
 
+#games-index-new-link {
+	background-color:azure;
+}
+
+#new-form-submit{
+	width:33vw;
+}

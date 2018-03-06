@@ -1,6 +1,7 @@
 <% include ../partials/header.ejs %>
-<h1>games index page</h1>
+<h1>All the games!</h1>
 <div class='flex-box' id='game-index-flex-box'>
+	<a href="/games/new" id='games-index-new-link' class = 'game-link'><h2>Add a review!</h2></a>
 	<% games.forEach(function(game) { %>
 		<a class = 'game-link' href="/games/<%= game.id %>" hidden>
 			<div class='game-div'>
