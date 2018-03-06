@@ -1,8 +1,8 @@
 <% include ../partials/header.ejs %>
-<form class='editBtn' method="post" action="/games/<%= game.id %>">
-	Title:<input type="text" name="title" value="<%=game.title%>">
-	Score:<input type="text" name="score" value="<%= game.score %>">
-	Description:<input type="text" name="description" value="<%= game.description %>">
+<form class='editBtn new-form-flexbox' method="post" id='edit-form' action="/games/<%= game.id %>">
+	<input type="text" class='new-game-input' name="title" value="<%=game.title%>" placeholder='Title'>
+	<input type="text" class='new-game-input' name="score" value="<%= game.score %>" placeholder='Score'>
+	<textarea class='new-game-textarea'placeholder='Description' type="text" name="description" form='edit-form'><%= game.description %></textarea>
 	<input type="submit" >
 </form>
 

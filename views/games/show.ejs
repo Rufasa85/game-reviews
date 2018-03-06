@@ -1,7 +1,11 @@
 <% include ../partials/header.ejs %>
 <h1><%= game.title%></h1>
-<h3> <%= game.score %></h3>
-<p><%= game.description %></p>
-<a href="/games/<%= game.id %>" class = 'deleteBtn'>Delete!</a>
-<a href="/games/<%= game.id %>/edit">Edit</a>
+<div id ='show-page-flexbox'>
+	<div id = 'show-page-container'>
+		<h1 class="game-show-details" id="show-page-score"> <%= game.score %></h1>
+		<h2 class="game-show-details"><%= game.description %></h2>
+		<a href="/games/<%= game.id %>" class = 'deleteBtn' ><button class='show-page-buttons' id='show-delete-button'>Delete!</button ></a>
+		<a href="/games/<%= game.id %>/edit"><button class='show-page-buttons'>Edit</button ></a>
+	</div>
+</div>
 <% include ../partials/footer.ejs %>
