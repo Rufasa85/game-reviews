@@ -18,7 +18,12 @@ app.get('/plays', function(req, res) {
 
 app.get('/games', function(req, res) {
 	db.game.findAll().then(function(games) {
-		res.render('games/index', {games:games})
+		if (games) {
+			res.render('games/index', {games:games})
+		}
+		else {
+			res.send('no games yet')
+		}
 	})
 });
 
