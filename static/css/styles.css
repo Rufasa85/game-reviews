@@ -215,3 +215,19 @@ a.game-link:hover {
 #about-page-desc {
 	width:70%;
 }
+
+#copyright-bar {
+	/*position:fixed;*/
+	width: 100%;
+	background-color: black;
+}
+
+#copyright-flex {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+#viewport-force {
+	min-height:75vh;
+}
