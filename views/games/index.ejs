@@ -3,7 +3,7 @@
 <div class='flex-box' id='game-index-flex-box'>
 	<a href="/games/new" id='games-index-new-link' class = 'game-link'><h2>Add a review!</h2></a>
 	<% games.forEach(function(game) { %>
-		<a class = 'game-link' href="/games/<%= game.id %>" hidden>
+		<a class = 'game-link' href="/games/<%= game.id %>"  hidden>
 			<div class='game-div'>
 				<h2><%=game.title%><span class='index-page-score'>Score: <%=game.score%></span></h2>
 				<p><%=game.description%></p>

@@ -51,8 +51,9 @@ textarea:focus{
 }
 
 .game-link {
-	height:30vh;
-	width:24%;
+	margin:5px;
+	height:300px;
+	width:300px;
 	border-radius: 3%;
 	opacity: 0.5;
 	background-color: #bdc3c7;
@@ -64,6 +65,7 @@ textarea:focus{
 a.game-link:hover {
 	background-color: white;
 }
+
 
 .game-div:hover {
 	opacity:1;
@@ -217,7 +219,8 @@ a.game-link:hover {
 }
 
 #copyright-bar {
-	/*position:fixed;*/
+	position:fixed;
+	bottom:0;
 	width: 100%;
 	background-color: black;
 }
@@ -230,4 +233,7 @@ a.game-link:hover {
 
 #viewport-force {
 	min-height:75vh;
+	height: auto;
+	margin-bottom: 10px;
+	border:1px solid salmon;
 }
